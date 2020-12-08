@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Happy durga puja</title>
+        <link rel="stylesheet" type="text/css" href="home.css">
+       
+    </head>
+    <body>
+<div class="all">
+        <div class="page1">
+            <div class="image" id="image">
+                    <textarea cols="20" rows="1" id="text-contain" placeholder="Type your name here"></textarea>
+                    <br />
+                    <button class="btn" onclick="a()">Click here</button>
+            </div>
+            <div class="left" id="leftl"><img src="a.jpg"></div>
+            <div class="right" id="rightl"><img src="a.jpg"></div>
+        </div>
+
+        <div class="page2">
+            <div class="container">
+                    <marquee class="marq" direction="up" behavior="scroll" style="left:0">
+                        <div><img src="SLIDER.png"></div>
+                        <div><img src="SLIDER.png"></div>
+                        <div><img src="SLIDER.png"></div>
+                        <div><img src="SLIDER.png"></div>
+                        <div><img src="SLIDER.png"></div>
+                        <div><img src="SLIDER.png"></div>
+                        <div><img src="SLIDER.png"></div>
+                        <div><img src="SLIDER.png"></div>
+                        <div><img src="SLIDER.png"></div>
+                        <div><img src="SLIDER.png"></div>
+                        <div><img src="SLIDER.png"></div>
+                    </marquee>
+                    <marquee class="marq" direction="down" behavior="scroll" style="right:0">
+                            <div><img src="SLIDER.png"></div>
+                            <div><img src="SLIDER.png"></div>
+                            <div><img src="SLIDER.png"></div>
+                            <div><img src="SLIDER.png"></div>
+                            <div><img src="SLIDER.png"></div>
+                            <div><img src="SLIDER.png"></div>
+                            <div><img src="SLIDER.png"></div>
+                            <div><img src="SLIDER.png"></div>
+                            <div><img src="SLIDER.png"></div>
+                            <div><img src="SLIDER.png"></div>
+                            <div><img src="SLIDER.png"></div>
+                        </marquee>
+
+                <h1 class="name" id="name">name</h1>
+                <div class="text1">
+                <h2>Wishing colour, bliss and beauty to you this DIWALI...
+                Stay blessed!!</h2>
+                </div>
+                <img src="Goddess_Maheshwari.png" class="image1">
+                <h3><center>Light a lamp of love <br>
+                Blast a chain of sorrow <br>
+                
+                Shoot a rocket of properoty <br>
+                Fire a flowerpot of happiness</center></h3>
+                <img src="durgama.png" class="image1">
+                <h3>Eat. Pray. Love. Wish you a very happy Diwali.</h3>
+
+        </div>
+        </div>
+</div>
+    </body>
+    <script>
+        function a(){
+            document.getElementById("name").innerText = document.getElementById("text-contain").value;
+            document.getElementById("image").style.opacity ="0";
+            document.getElementById("rightl").style.right = "-100%";
+            document.getElementById("leftl").style.left = "-100%";
+            var a = document.body;
+            a.style.overflowY = "auto";
+        } 
+    </script>
+</html>
